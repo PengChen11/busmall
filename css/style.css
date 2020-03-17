@@ -1,0 +1,96 @@
+body {
+    background-color: rgb(255, 254, 251);
+}
+#head{
+    width:1280px;
+    height:176px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+#logoimg {
+    display: inline-block;
+
+}
+#logotext {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 20px;
+
+}
+#logotext h1{
+    font-family: 'Pacifico', cursive;
+    font-size: 70px;
+    margin-top: 30px;
+
+}
+#logotext h2{
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 20px;
+    margin-top: 30px;
+}
+#border{
+    background-image: url("../img/bus.png");
+    width:1280px;
+    height:16px;
+}
+
+#main{
+    width:1280px;
+    margin-right: auto;
+    margin-left: auto;
+}
+#results{
+    display: inline-block;
+    background-image: url("../img/bus.png");
+    width:288px;
+    height: 752px;
+    vertical-align: top;
+}
+#report{
+    background-color: rgb(255, 254, 251);
+    width:224px;
+    height: 704px;
+    margin:0 16px 16px 16px;
+    padding:16px;
+
+}
+#report p {
+    font-size: 25px;
+    margin-bottom: 16px;
+}
+#selections{
+    display: inline-block;
+    background-image: url("../img/bus.png");
+    width:992px;
+    height: 752px;
+    margin-left:0;
+    vertical-align: top;
+}
+#pictures{
+    background-color: rgb(255, 254, 251);
+    width:976px;
+    height: 544px;
+    overflow: hidden;
+    
+}
+#pictures img{
+    width:290px;
+    padding:16px;
+}
+#text{
+    background-color: rgb(255, 254, 251);
+    width:944px;
+    height: 144px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    padding:16px;
+}
+#footer{
+    background-color: blueviolet;
+    width:1280px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
