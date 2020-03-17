@@ -85,9 +85,10 @@ body {
     margin-top: 16px;
     margin-bottom: 16px;
     padding:16px;
+    font-size: 25px;
+    font-family: 'Gloria Hallelujah', cursive;
 }
 #footer{
-    background-color: blueviolet;
     width:1280px;
     height: 100px;
     margin-left: auto;
