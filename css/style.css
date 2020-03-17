@@ -92,6 +92,14 @@ li:nth-child(odd){
     font-size: 25px;
     font-family: 'Gloria Hallelujah', cursive;
 }
+
+/* #chart {
+    width:280px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+} */
+
 #footer{
     width:1280px;
     height: 100px;
@@ -103,3 +111,4 @@ li:nth-child(odd){
 #footer h3{
     margin-top: 30px;
 }
+
