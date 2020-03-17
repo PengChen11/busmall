@@ -59,6 +59,10 @@ body {
     font-size: 25px;
     margin-bottom: 16px;
 }
+li:nth-child(odd){
+    background-color: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+}
 #selections{
     display: inline-block;
     background-image: url("../img/bus.png");
