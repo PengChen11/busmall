@@ -1,6 +1,7 @@
 /* eslint-disable indent */
 'use strict';
 
+
 var itemArray =[];
 var totalClicked = 0;
 var itemNameArray = [];
@@ -94,7 +95,7 @@ function getResult() {
     var clickEl = document.getElementById('showreport');
     var newClickEl = document.createElement('li');
     newClickEl.style.color = "red";
-    newClickEl.textContent = 'You Clicked ' + totalClicked + ' times.';
+    newClickEl.textContent = 'You voted ' + totalClicked + ' times.';
     clickEl.appendChild(newClickEl);
 }
 function updateResult() {
@@ -114,7 +115,7 @@ function updateResult() {
     var clickEl = document.getElementById('showreport');
     var newClickEl = document.createElement('li');
     newClickEl.style.color = "red";
-    newClickEl.textContent = 'You Clicked ' + totalClicked + ' times.';
+    newClickEl.textContent = 'You voted ' + totalClicked + ' times.';
     clickEl.appendChild(newClickEl);
 
 }
@@ -147,13 +148,19 @@ function clickHandler(event) {
     updateNumClicked ();
     updateTimesRendered ();
     if (totalClicked === 25){
+        alert('Thank you for voting!');
         getResult();
         updateChart();
+
     } else if (totalClicked >25){
-        updateResult();
-        updateChart();
+        if (confirm('Do you want to keep voting? Click "Cancel" to start new voting process')){
+            updateResult();
+            updateChart();
+        } else {
+            window.location.reload();
+        }
     }
-    }
+}
 image1.addEventListener('click', clickHandler);
 image2.addEventListener('click', clickHandler);
 image3.addEventListener('click', clickHandler);
