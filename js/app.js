@@ -148,10 +148,10 @@ function clickHandler(event) {
     updateTimesRendered ();
     if (totalClicked === 25){
         getResult();
-        newChart();
+        updateChart();
     } else if (totalClicked >25){
         updateResult();
-        newChart();
+        updateChart();
     }
     }
 image1.addEventListener('click', clickHandler);
