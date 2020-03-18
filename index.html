@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Pacifico&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Bus Mall</title>
 </head>
@@ -36,9 +37,18 @@
         </div
         ><div id="selections">
             <div id="pictures">
-                <img id="img1">
-                <img id="img2">
-                <img id="img3">
+                <figure>
+                    <img id="img1">
+                </figure>
+                <figure>
+                    <img id="img2">
+                </figure>
+                <figure>
+                    <img id="img3">
+                </figure>
+            </div>
+            <div id="chart">
+                <canvas id="myChart"></canvas>
             </div>
             <div id="text">
                 <p>Please choose one item from above which you probrebly will spend your money for. 
@@ -49,9 +59,10 @@
         </div>
     </div>
     <div id="footer">
-        <h3>Designed and maintenanced by Peng Chen.</h3>
+        <h3>Designed and maintened by Peng Chen.</h3>
     </div>
     <script src="js/app.js"></script>
+    <script src="js/chart.js"></script>
 
 </body>
 </html>

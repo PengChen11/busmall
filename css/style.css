@@ -44,13 +44,13 @@ body {
     display: inline-block;
     background-image: url("../img/bus.png");
     width:288px;
-    height: 752px;
+    height: 1184px;
     vertical-align: top;
 }
 #report{
     background-color: rgb(255, 254, 251);
     width:224px;
-    height: 704px;
+    height: 1136px;
     margin:0 16px 16px 16px;
     padding:16px;
 
@@ -67,20 +67,23 @@ li:nth-child(odd){
     display: inline-block;
     background-image: url("../img/bus.png");
     width:992px;
-    height: 752px;
+    height: 1184px;
     margin-left:0;
     vertical-align: top;
 }
 #pictures{
     background-color: rgb(255, 254, 251);
     width:976px;
-    height: 544px;
-    overflow: hidden;
+    height: 464px;
+    vertical-align: bottom;
     
 }
 #pictures img{
     width:290px;
-    padding:50px 16px 16px 16px;
+    padding:0px 16px 16px 16px;
+}
+figure {
+    display:inline-block;
 }
 #text{
     background-color: rgb(255, 254, 251);
@@ -92,6 +95,18 @@ li:nth-child(odd){
     font-size: 25px;
     font-family: 'Gloria Hallelujah', cursive;
 }
+
+#chart {
+    width:976px;
+    height: 488px;
+    background-color: rgb(255, 254, 251);
+    margin-top: 16px;
+    padding-bottom: 8px;
+
+    /* margin-left: auto;
+    margin-right: auto; */
+}
+
 #footer{
     width:1280px;
     height: 100px;
@@ -103,3 +118,4 @@ li:nth-child(odd){
 #footer h3{
     margin-top: 30px;
 }
+

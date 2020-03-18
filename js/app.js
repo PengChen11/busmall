@@ -3,6 +3,11 @@
 
 var itemArray =[];
 var totalClicked = 0;
+var itemNameArray = [];
+var clickArray = [];
+var renderArray = [];
+
+
 
 class Item {
     constructor(name, url) {
@@ -11,6 +16,7 @@ class Item {
         this.timesRendered=0;
         this.numClicked=0;
         itemArray.push(this);
+        itemNameArray.push(this.name);
     }
 }
 new Item ('bag', 'assets/bag.jpg');
@@ -113,22 +119,44 @@ function updateResult() {
 
 }
 
+function updateNumClicked (){
+    var numClickedArray = [];
+    for (var i=0; i<itemArray.length;i++){
+        numClickedArray.push(itemArray[i].numClicked);
+    }
+    clickArray = numClickedArray;
+}
+
+function updateTimesRendered () {
+    var timesRenderedArray =[];
+    for (var i=0; i<itemArray.length;i++){
+        timesRenderedArray.push(itemArray[i].timesRendered);
+    }
+    renderArray = timesRenderedArray;
+}
+
+
 function clickHandler(event) {
     totalClicked++;
     for (var i = 0; i < itemArray.length; i++) {
       if (itemArray[i].name === event.target.name) {
         itemArray[i].numClicked++;
-      } 
+      }
     }
     renderItems();
+    updateNumClicked ();
+    updateTimesRendered ();
     if (totalClicked === 25){
         getResult();
+        newChart();
     } else if (totalClicked >25){
         updateResult();
+        newChart();
     }
-    
-}
-  
+    }
 image1.addEventListener('click', clickHandler);
 image2.addEventListener('click', clickHandler);
 image3.addEventListener('click', clickHandler);
+
+
+
