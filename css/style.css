@@ -53,6 +53,8 @@ body {
     height: 1136px;
     margin:0 16px 16px 16px;
     padding:16px;
+    font-family: Arial, Helvetica, sans-serif;
+
 
 }
 #report p {
@@ -61,7 +63,12 @@ body {
 }
 li:nth-child(odd){
     background-color: lightgray;
-    font-family: Arial, Helvetica, sans-serif;
+}
+li {
+    margin-bottom: 10px;
+}
+li:last-child{
+    font-size: 22px;
 }
 #selections{
     display: inline-block;
