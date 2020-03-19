@@ -41,7 +41,6 @@ function updateChart (){
             }
         }
         });
-    
 }
 
 // function newChart(){
