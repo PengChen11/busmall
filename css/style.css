@@ -70,6 +70,9 @@ li {
 li:last-child{
     font-size: 22px;
 }
+button {
+    margin-bottom: 16px;
+}
 #selections{
     display: inline-block;
     background-image: url("../img/bus.png");
